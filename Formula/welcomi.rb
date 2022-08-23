@@ -5,11 +5,11 @@
 class Welcomi < Formula
   desc ""
   homepage "https://github.com/miyasasa/welcomi"
-  version "0.0.1"
+  version "0.0.3"
 
   on_macos do
-    url "https://github.com/miyasasa/welcomi/releases/download/v0.0.1/welcomi_0.0.1_darwin_all.tar.gz"
-    sha256 "93d5b68796f4a4bf2b1baa90f05f35ca7507f29bd5b897d377e18073be62cb65"
+    url "https://github.com/miyasasa/welcomi/releases/download/v0.0.3/welcomi_0.0.3_darwin_all.tar.gz"
+    sha256 "405ec0ea05e52efce8223efe63b0bb37ac0ae443b78e4764c0ab61068de31a3e"
 
     def install
       bin.install "welcomi"
@@ -18,16 +18,16 @@ class Welcomi < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/miyasasa/welcomi/releases/download/v0.0.1/welcomi_0.0.1_linux_arm64.tar.gz"
-      sha256 "0d8271d0da9076f6a60667796af25fe60ec7f12aa1b68223766de10c464b545b"
+      url "https://github.com/miyasasa/welcomi/releases/download/v0.0.3/welcomi_0.0.3_linux_arm64.tar.gz"
+      sha256 "9a1e5d9c0d56f26991a2f8117d829c4a2f9133b377f4850bf1225580f9c1b467"
 
       def install
         bin.install "welcomi"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/miyasasa/welcomi/releases/download/v0.0.1/welcomi_0.0.1_linux_amd64.tar.gz"
-      sha256 "0d8271d0da9076f6a60667796af25fe60ec7f12aa1b68223766de10c464b545b"
+      url "https://github.com/miyasasa/welcomi/releases/download/v0.0.3/welcomi_0.0.3_linux_amd64.tar.gz"
+      sha256 "9a1e5d9c0d56f26991a2f8117d829c4a2f9133b377f4850bf1225580f9c1b467"
 
       def install
         bin.install "welcomi"
